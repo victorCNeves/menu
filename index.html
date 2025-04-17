@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+  <html lang="pt-BR">
+    <head>
+      <meta charset="UTF-8" />
+      <title>Site com Menu, Texto e Rodap�</title>
+    </head>
+    <body>
+      <!-- Menu com imagens -->
+      <nav>
+        <a href="https://www.google.com" target="_blank">
+          <img src="img/google.svg" alt="Google" width="58" />
+        </a>
+        <a href="https://www.youtube.com" target="_blank">
+          <img src="img/ytb.svg" alt="YouTube" height="58" />
+        </a>
+        <a href="https://www.facebook.com" target="_blank">
+          <img src="img/fb.svg" alt="Facebook" width="72.25" />
+        </a>
+        <a href="https://www.instagram.com" target="_blank">
+          <img src="img/ig.svg" alt="Instagram" height="58" />
+        </a>
+        <a href="https://www.twitter.com" target="_blank">
+          <img
+            id="twitter"
+            src="img/x.svg"
+            alt="Twitter"
+            height="60"
+            onmouseover="this.src='img/tt.svg';"
+            onmouseout="this.src='img/x.svg';"
+          />
+        </a>
+        <a href="https://www.linkedin.com" target="_blank">
+          <img src="img/linkedin.svg" alt="LinkedIn" height="58" />
+        </a>
+        <a href="https://www.whatsapp.com" target="_blank">
+          <img src="img/wpp.svg" alt="WhatsApp" width="73.34" />
+        </a>
+      </nav>
+      <!-- Conteúdo principal -->
+      <main>
+        <h1>Bem-vindo ao Meu Site</h1>
+        <p>
+          O desenvolvimento web � uma habilidade essencial na era digital. Com
+          o HTML, criamos a estrutura das p�ginas. Com o CSS, damos estilo e
+          identidade visual. O JavaScript traz interatividade e comportamento
+          din�mico. Aprender essas linguagens permite criar desde sites
+          simples at� sistemas complexos. A pr�tica constante � a chave para o
+          dom�nio dessas tecnologias.
+        </p>
+        <p>
+          Al�m da parte t�cnica, � importante entender a experi�ncia do
+          usu�rio. Um site bem estruturado e de f�cil navega��o melhora a
+          comunica��o com o p�blico. Usar imagens, menus claros e textos
+          objetivos contribui muito. Tamb�m � fundamental garantir que o site
+          seja responsivo, ou seja, funcione bem em diferentes dispositivos,
+          como celulares e tablets.
+        </p>
+        <p>
+          Para quem est� come�ando, � recomend�vel explorar os recursos do
+          HTML5. Tags como &lt;header&gt;, &lt;section&gt;, &lt;nav&gt; e
+          &lt;footer&gt; ajudam a organizar melhor o conte�do. Elas tornam o
+          c�digo mais sem�ntico, facilitando a leitura tanto para pessoas
+          quanto para os mecanismos de busca. O uso correto dessas tags tamb�m
+          melhora a acessibilidade do site.
+        </p>
+        <p>
+          Por fim, nunca pare de explorar. A �rea de desenvolvimento web est�
+          em constante evolu��o, com novas ferramentas e frameworks surgindo
+          sempre. Participar de comunidades, assistir tutoriais e fazer
+          projetos pr�ticos s�o formas eficientes de aprender. Com dedica��o e
+          curiosidade, � poss�vel construir solu��es incr�veis e impactar
+          pessoas por meio da tecnologia.
+        </p>
+      </main>
+      <!-- Rodapé -->
+      <footer>
+        <p>&copy; Victor Hugo Concolato Neves 2025 - Todos os direitos reservados.</p>
+      </footer>
+    </body>
+    <style>
+      body{
+        font-family: 'Lato', sans-serif;
+        font-size: 1.2em;
+        line-height: 1.5em;
+        color: #1d1d1d;
+        background-color: white;
+      }
+
+      nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      nav > a > img:hover{
+        transform: scale(1.1) translateY(-3px);
+        transition: .3s;
+      }
+      nav > *{
+        margin: 0 5%;
+      }
+      a{
+        color: white;
+      }
+      a:active{
+        color: white;
+      }
+    </style>
+  </head>
+</html>
